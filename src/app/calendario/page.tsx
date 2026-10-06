@@ -9,18 +9,21 @@ export default function CalendarioPage() {
   const { periodos } = useApp();
 
   const hitos = [
-    { fecha: 'Marzo 2026', titulo: 'Inicio del Ciclo Lectivo', desc: 'Comienzo de clases regulares 1° a 6°° año.' },
+    { fecha: 'Marzo 2026', titulo: 'Inicio del Ciclo Lectivo', desc: 'Comienzo de clases regulares 1° a 6° año.' },
     { fecha: 'Julio 2026', titulo: 'Cierre del 1° Informe RITE', desc: 'Primera valoración pedagógica cuatrimestral (TEA, TEP, TED).' },
     { fecha: 'Septiembre - Noviembre 2026', titulo: 'Acompañamiento en Contraturno', desc: 'Talleres semanales para estudiantes con materias pendientes.' },
     { fecha: 'Noviembre 2026', titulo: 'Cierre del 2° Informe RITE', desc: 'Definición de aprobación directa o derivación a intensificación.' },
-    { fecha: '09 al 22 de Diciembre 2026', titulo: 'Período de Intensificación Diciembre', desc: '1 instancia presencial obligatoria para TEP/TED y deudas de años anteriores.' },
-    { fecha: '15 al 27 de Febrero 2027', titulo: 'Período de Intensificación Febrero', desc: '2 instancia presencial previa al nuevo ciclo lectivo.' },
-    { fecha: 'Marzo 2027', titulo: 'Definición de Recursado Espec?fico', desc: 'Inscripción a contraturno para materias no acreditadas tras febrero.' },
+    { fecha: '09 al 22 de Diciembre 2026', titulo: 'Período de Intensificación Diciembre', desc: '1° instancia presencial obligatoria para TEP/TED y deudas de años anteriores.' },
+    { fecha: '15 al 27 de Febrero 2027', titulo: 'Período de Intensificación Febrero', desc: '2° instancia presencial previa al nuevo ciclo lectivo.' },
+    { fecha: 'Marzo 2027', titulo: 'Definición de Recursado Específico', desc: 'Inscripción a contraturno para materias no acreditadas tras febrero.' },
   ];
 
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+        <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-1">
+          E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+        </div>
         <h1 className="text-2xl font-black text-slate-900">
           Calendario Académico Institucional 2026 / 2027
         </h1>
