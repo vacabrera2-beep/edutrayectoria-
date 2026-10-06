@@ -58,8 +58,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span className="font-medium text-slate-300">
-              Sistema Institucional de Trayectorias y Acreditación (Nueva Normativa Secundaria)
+            <span className="font-bold text-white">
+              E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+            </span>
+            <span className="hidden md:inline text-slate-500">|</span>
+            <span className="hidden md:inline text-slate-300">
+              Régimen Académico de Educación Secundaria
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
             <span className="hidden md:inline text-slate-400">Ciclo Lectivo 2026</span>
@@ -78,7 +82,7 @@ export default function Navbar() {
                     : 'text-slate-300 hover:text-white hover:bg-slate-700'
                 }`}
               >
-                ?? Estudiante ({estudianteActivo.nombre.split(' ')[0]})
+                🎓 Estudiante ({estudianteActivo.nombre.split(' ')[0]})
               </button>
               <button
                 type="button"
@@ -89,7 +93,7 @@ export default function Navbar() {
                     : 'text-slate-300 hover:text-white hover:bg-slate-700'
                 }`}
               >
-                ????? Docente (Prof. Valeria Castro)
+                👩‍🏫 Docente (Prof. Valeria Castro)
               </button>
               <button
                 type="button"
@@ -100,7 +104,7 @@ export default function Navbar() {
                     : 'text-slate-300 hover:text-white hover:bg-slate-700'
                 }`}
               >
-                ??? Preceptoría / Directivo
+                🏛️ Preceptoría / Directivo
               </button>
             </div>
           </div>
@@ -119,14 +123,14 @@ export default function Navbar() {
               <div className="flex items-center gap-1.5">
                 <span className="font-black text-xl tracking-tight text-slate-900">EduTrayectoria</span>
                 <span className="px-1.5 py-0.5 text-[10px] font-bold bg-blue-100 text-blue-700 rounded uppercase tracking-wider">
-                  Nueva Normativa
+                  E.E.S. Nº 16
                 </span>
               </div>
-              <p className="text-xs text-slate-500 -mt-0.5">Régimen Académico Secundario</p>
+              <p className="text-xs font-medium text-slate-500 -mt-0.5">&ldquo;Fortaleza de los Kilmes&rdquo;</p>
             </div>
           </Link>
 
-          {/* Menú de Navegaci?n Desktop */}
+          {/* Menú de Navegación Desktop */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => {
               const Icon = link.icon;
@@ -167,7 +171,7 @@ export default function Navbar() {
               </p>
               <p className="text-[11px] text-slate-500">
                 {role === 'estudiante'
-                  ? `${estudianteActivo.cursoActual} ? ${estudianteActivo.orientacion}`
+                  ? `${estudianteActivo.cursoActual} • ${estudianteActivo.orientacion}`
                   : role === 'docente'
                   ? 'Dpto. Matemática y Exactas'
                   : 'Equipo de Conducción Escolar'}
@@ -181,7 +185,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Barra de Navegaci?n Móvil y Tablets */}
+        {/* Barra de Navegación Móvil y Tablets */}
         <div className="flex lg:hidden overflow-x-auto py-2 border-t border-slate-100 gap-1.5 no-scrollbar">
           {navLinks.map((link) => {
             const Icon = link.icon;

@@ -15,13 +15,13 @@ export function exportarPlanillaNotasPDF(
   });
 
   // Encabezado institucional
-  doc.setFontSize(16);
+  doc.setFontSize(15);
   doc.setTextColor(30, 58, 138); // blue-900
-  doc.text('INSTITUTO DE EDUCACI?N SECUNDARIA - PROVINCIA DE BUENOS AIRES', 14, 15);
+  doc.text('E.E.S. Nº 16 "FORTALEZA DE LOS KILMES" - PROVINCIA DE BUENOS AIRES', 14, 15);
 
-  doc.setFontSize(11);
+  doc.setFontSize(10);
   doc.setTextColor(50, 50, 50);
-  doc.text('REGISTRO INSTITUCIONAL DE TRAYECTORIAS EDUCATIVAS (RITE) - S?BANA OFICIAL DE CALIFICACIONES', 14, 22);
+  doc.text('REGISTRO INSTITUCIONAL DE TRAYECTORIAS EDUCATIVAS (RITE) - SÁBANA OFICIAL DE CALIFICACIONES', 14, 22);
 
   // Metadatos del curso y materia
   doc.setFontSize(10);
@@ -123,29 +123,33 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   });
 
   // Encabezado
-  doc.setFontSize(16);
+  doc.setFontSize(15);
   doc.setTextColor(30, 58, 138);
-  doc.text('DIRECCIÓN GENERAL DE CULTURA Y EDUCACI?N', 105, 16, { align: 'center' });
+  doc.text('E.E.S. Nº 16 "FORTALEZA DE LOS KILMES"', 105, 14, { align: 'center' });
 
-  doc.setFontSize(12);
+  doc.setFontSize(10);
   doc.setTextColor(55, 65, 81);
-  doc.text('INFORME VALORATIVO DE LA TRAYECTORIA EDUCATIVA (R.I.T.E.)', 105, 23, { align: 'center' });
+  doc.text('DIRECCIÓN GENERAL DE CULTURA Y EDUCACIÓN - PROV. DE BS. AS.', 105, 20, { align: 'center' });
 
-  doc.setFontSize(9);
+  doc.setFontSize(11);
+  doc.setTextColor(17, 24, 39);
+  doc.text('INFORME VALORATIVO DE LA TRAYECTORIA EDUCATIVA (R.I.T.E.)', 105, 26, { align: 'center' });
+
+  doc.setFontSize(8.5);
   doc.setTextColor(100, 100, 100);
-  doc.text('Régimen Académico de la Educación Secundaria - Ciclo Lectivo 2026', 105, 28, { align: 'center' });
+  doc.text('Régimen Académico de la Educación Secundaria - Ciclo Lectivo 2026', 105, 31, { align: 'center' });
 
   // Ficha del estudiante
   doc.setFillColor(243, 244, 246);
-  doc.roundedRect(14, 32, 182, 20, 2, 2, 'F');
+  doc.roundedRect(14, 35, 182, 20, 2, 2, 'F');
 
   doc.setFontSize(9.5);
   doc.setTextColor(17, 24, 39);
-  doc.text(`Estudiante: ${estudiante.nombre}`, 18, 38);
-  doc.text(`DNI: ${estudiante.dni}`, 120, 38);
-  doc.text(`Curso: ${estudiante.cursoActual} (${estudiante.turno})`, 18, 45);
-  doc.text(`Orientación: ${estudiante.orientacion}`, 85, 45);
-  doc.text(`Legajo: ${estudiante.legajo}`, 150, 45);
+  doc.text(`Estudiante: ${estudiante.nombre}`, 18, 41);
+  doc.text(`DNI: ${estudiante.dni}`, 120, 41);
+  doc.text(`Curso: ${estudiante.cursoActual} (${estudiante.turno})`, 18, 48);
+  doc.text(`Orientación: ${estudiante.orientacion}`, 85, 48);
+  doc.text(`Legajo: ${estudiante.legajo}`, 150, 48);
 
   // Tabla con materias actuales y RITE
   const materiasActuales = estudiante.trayectoria.filter((t) => t.anio === estudiante.anioActual);
@@ -161,7 +165,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   autoTable(doc, {
     head,
     body,
-    startY: 56,
+    startY: 58,
     theme: 'grid',
     styles: {
       fontSize: 8.5,
@@ -188,7 +192,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
 
   doc.setFontSize(11);
   doc.setTextColor(185, 28, 28); // red-700
-  doc.text('ESPACIOS CURRICULARES PENDIENTES / ADEUDADOS DE A?OS ANTERIORES', 14, finalY + 10);
+  doc.text('ESPACIOS CURRICULARES PENDIENTES / ADEUDADOS DE AÑOS ANTERIORES', 14, finalY + 10);
 
   if (materiasAdeudadas.length === 0) {
     doc.setFontSize(9);
@@ -198,7 +202,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
     const headAdeudadas = [['Materia Pendiente', 'Año Original', 'Docente Evaluador', 'Instancia de Acreditación']];
     const bodyAdeudadas = materiasAdeudadas.map((m) => [
       m.nombre,
-      `${m.anio}?°° Año`,
+      `${m.anio}° Año`,
       m.docenteAsignado,
       'Período de Intensificación Dic/Feb'
     ]);
@@ -235,9 +239,9 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   doc.setFontSize(7.5);
   doc.setTextColor(120, 20, 20);
   doc.text('GLOSARIO Y MARCO NORMATIVO:', 18, finalY2 + 13);
-  doc.text('? TEA (Trayectoria Educativa Avanzada): Alcanz? los aprendizajes prioritarios previstos (Calificación 7 a 10).', 18, finalY2 + 17);
-  doc.text('? TEP (Trayectoria Educativa en Proceso): Requiere afianzar contenidos en período de intensificación.', 18, finalY2 + 21);
-  doc.text('? TED (Trayectoria Educativa Discontinua): Escasa vinculación. Requiere intensificación prioritaria presencial.', 18, finalY2 + 25);
+  doc.text('• TEA (Trayectoria Educativa Avanzada): Alcanzó los aprendizajes prioritarios previstos (Calificación 7 a 10).', 18, finalY2 + 17);
+  doc.text('• TEP (Trayectoria Educativa en Proceso): Requiere afianzar contenidos en período de intensificación.', 18, finalY2 + 21);
+  doc.text('• TED (Trayectoria Educativa Discontinua): Escasa vinculación. Requiere intensificación prioritaria presencial.', 18, finalY2 + 25);
 
   // Firmas
   const signY = finalY2 + 48;

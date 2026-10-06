@@ -216,12 +216,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
   // Función para descargar un archivo real generado al vuelo
   const descargarMaterialArchivo = (material: MaterialEstudio) => {
     const contenido = `================================================================================
-INSTITUTO DE EDUCACI?N SECUNDARIA - PLATAFORMA EDUTRAYECTORIA
+ESCUELA DE EDUCACIÓN SECUNDARIA (E.E.S.) Nº 16 "FORTALEZA DE LOS KILMES"
+Plataforma Institucional EduTrayectoria - Ciclo Lectivo 2026
 Régimen Académico Marco - Período de Intensificación y Acreditación
 ================================================================================
 
 DOCUMENTO: ${material.titulo}
-MATERIA: ${material.materiaNombre} (${material.anio}?°° Año)
+MATERIA: ${material.materiaNombre} (${material.anio}° Año)
 DOCENTE RESPONSABLE: ${material.docenteNombre}
 FECHA DE PUBLICACIÓN: ${material.fechaSubida}
 TIPO: ${material.tipo.toUpperCase().replace('_', ' ')}
@@ -232,7 +233,7 @@ DESCRIPCIÓN Y OBJETIVOS PEDAGÓGICOS:
 ${material.descripcion}
 
 --------------------------------------------------------------------------------
-CRITERIOS DE VALORACIÓN Y EVALUACIÓN SEG?N NUEVA NORMATIVA:
+CRITERIOS DE VALORACIÓN Y EVALUACIÓN SEGÚN NUEVA NORMATIVA:
 --------------------------------------------------------------------------------
 1. Valoración integral de la trayectoria: Presentación de actividades y defensa oral.
 2. La acreditación requiere calificación numérica igual o superior a 7 (siete) puntos.
@@ -248,14 +249,14 @@ CONTENIDOS PRIORITARIOS A EVALUAR:
 - Unidad 3: Aplicación práctica y articulación de saberes con el año correlativo.
 
 --------------------------------------------------------------------------------
-PAUTAS FORMALES DE PRESENTACI?N:
+PAUTAS FORMALES DE PRESENTACIÓN:
 --------------------------------------------------------------------------------
-- Presentar en carpeta individual con carátula oficial (Nombre, Apellido, DNI, Curso y°° Año).
+- Presentar en carpeta individual con carátula oficial (Nombre, Apellido, DNI, Curso y Año).
 - Letra legible, prolijidad y constancia de desarrollo paso a paso en ejercicios.
 - Entregar en mano al docente evaluador el primer día fijado en el cronograma oficial.
 
 ================================================================================
-Generado automáticamente por EduTrayectoria - Sistema Oficial de Gestión Escolar.
+Generado oficialmente por E.E.S. Nº 16 "Fortaleza de los Kilmes" - EduTrayectoria
 ================================================================================`;
 
     const blob = new Blob([contenido], { type: 'text/plain;charset=utf-8' });

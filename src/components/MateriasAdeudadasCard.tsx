@@ -77,7 +77,7 @@ export default function MateriasAdeudadasCard() {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-red-100 text-red-800 uppercase tracking-wider">
-                    Adeudada de {materia.anio}?°° Año
+                    Adeudada de {materia.anio}° Año
                   </span>
                   <span className="text-xs text-slate-500">
                     Ciclo Lectivo Original: {2026 - (estudianteActivo.anioActual - materia.anio)}

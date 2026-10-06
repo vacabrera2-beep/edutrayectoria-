@@ -349,7 +349,7 @@ export default function MensajesList() {
                         : 'border-slate-200 text-slate-600'
                     }`}
                   >
-                    Cursada Regular del°° Año
+                    Cursada Regular del Año
                   </button>
                 </div>
               </div>

@@ -4,8 +4,10 @@ import { AppProvider } from '@/context/AppContext';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'EduTrayectoria | Plataforma Educativa - Nueva Normativa Secundaria',
-  description: 'Gestión de Trayectorias Escolares, Materias Adeudadas, Períodos de Intensificación, Sábana de Notas RITE y Comunicación Docente-Alumno.',
+  title: 'E.E.S. Nº 16 "Fortaleza de los Kilmes" | EduTrayectoria',
+  description: 'Sistema Institucional de Trayectorias Escolares y Régimen Académico - Escuela de Educación Secundaria Nº 16 "Fortaleza de los Kilmes".',
+  authors: [{ name: 'Vanina Cabrera' }],
+  creator: 'Vanina Cabrera',
 };
 
 export default function RootLayout({
@@ -21,10 +23,24 @@ export default function RootLayout({
           <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-8">
             {children}
           </main>
-          <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
-            <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-              <p className="font-semibold text-slate-700">EduTrayectoria ? Régimen Académico Marco de Educación Secundaria</p>
-              <p>Ciclo Lectivo 2026 ? Registro Institucional de Trayectorias Educativas (RITE)</p>
+          <footer className="bg-white border-t border-slate-200 py-6 text-xs text-slate-500">
+            <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+              <div>
+                <p className="font-bold text-slate-800">
+                  Escuela de Educación Secundaria (E.E.S.) Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+                </p>
+                <p className="text-slate-500 text-[11px] mt-0.5">
+                  Ciclo Lectivo 2026 • Registro Institucional de Trayectorias Educativas (R.I.T.E.)
+                </p>
+              </div>
+              <div className="text-center sm:text-right">
+                <p className="font-semibold text-slate-700">
+                  Diseño y Programación: <span className="text-blue-700 font-bold">Vanina Cabrera</span>
+                </p>
+                <p className="text-[11px] text-slate-400">
+                  Plataforma EduTrayectoria
+                </p>
+              </div>
             </div>
           </footer>
         </AppProvider>

@@ -195,7 +195,7 @@ export default function PlantelDocenteManager() {
                       </span>
                     </div>
                     <p className="text-xs text-slate-500 mt-1">
-                      División {asig.division} ? Turno {asig.turno}
+                      División {asig.division} • Turno {asig.turno}
                     </p>
                   </div>
                 ))}
@@ -220,7 +220,7 @@ export default function PlantelDocenteManager() {
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-purple-900 text-sm">{com.materiaNombre}</span>
                         <span className="px-2 py-0.5 rounded bg-purple-200 text-purple-900 font-extrabold text-[10px]">
-                          {com.anio}°°° Año
+                          {com.anio}° Año
                         </span>
                       </div>
                       <p className="text-xs text-purple-800 font-medium mt-1">
@@ -349,12 +349,12 @@ export default function PlantelDocenteManager() {
                   onChange={(e) => setAnioIntInput(Number(e.target.value))}
                   className="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-purple-500"
                 >
-                  <option value={1}>1°°° Año</option>
-                  <option value={2}>2°°° Año</option>
-                  <option value={3}>3°°° Año</option>
-                  <option value={4}>4°°° Año</option>
-                  <option value={5}>5°°° Año</option>
-                  <option value={6}>6°°° Año</option>
+                  <option value={1}>1° Año</option>
+                  <option value={2}>2° Año</option>
+                  <option value={3}>3° Año</option>
+                  <option value={4}>4° Año</option>
+                  <option value={5}>5° Año</option>
+                  <option value={6}>6° Año</option>
                 </select>
               </div>
 

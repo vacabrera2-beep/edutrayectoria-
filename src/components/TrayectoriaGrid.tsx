@@ -51,7 +51,7 @@ export default function TrayectoriaGrid() {
         return (
           <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-red-100 text-red-800 border border-red-200 animate-pulse">
             <AlertCircle className="w-3 h-3 text-red-600" />
-            Adeudada de°° Año Anterior
+            Adeudada de Año Anterior
           </span>
         );
       case 'intensificacion':
@@ -144,7 +144,7 @@ export default function TrayectoriaGrid() {
         </div>
       </div>
 
-      {/* Selector de°° Años Escolares (1° a 6°° año) */}
+      {/* Selector de Años Escolares (1° a 6° año) */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
         {anios.map((num) => {
           const countMaterias = materiasPorAnio[num]?.length || 0;
@@ -162,7 +162,7 @@ export default function TrayectoriaGrid() {
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              <span>{num}?°° Año</span>
+              <span>{num}° Año</span>
               {isCurrent && (
                 <span className="px-1.5 py-0.5 text-[9px] bg-blue-500 text-white rounded font-bold">
                   Actual
@@ -176,11 +176,11 @@ export default function TrayectoriaGrid() {
         })}
       </div>
 
-      {/* Grilla de Materias del°° Año Seleccionado */}
+      {/* Grilla de Materias del Año Seleccionado */}
       <div>
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-bold text-slate-900">
-            Materias de {selectedAnio}?°° Año {selectedAnio === estudianteActivo.anioActual ? '(Cursada Actual)' : ''}
+            Materias de {selectedAnio}° Año {selectedAnio === estudianteActivo.anioActual ? '(Cursada Actual)' : ''}
           </h2>
           <span className="text-xs font-medium text-slate-500">
             {materiasPorAnio[selectedAnio]?.length || 0} materias registradas

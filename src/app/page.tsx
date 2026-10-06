@@ -37,7 +37,7 @@ export default function HomePage() {
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Panel Oficial | Rol Activo: {role.toUpperCase()}</span>
+            <span>E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo; | Rol: {role.toUpperCase()}</span>
           </div>
           <h1 className="text-3xl font-black text-slate-900 tracking-tight">
             {role === 'estudiante'
@@ -81,7 +81,7 @@ export default function HomePage() {
                 Tienes {adeudadas.length} materia(s) adeudada(s) de años anteriores
               </h2>
               <p className="text-xs text-rose-100 mt-1 max-w-xl">
-                Espacios curriculares: <strong>{adeudadas.map((a) => `${a.nombre} (${a.anio}? año)`).join(', ')}</strong>. Tienes cuadernillos y modelos de examen asignados para rendir en el período de intensificación.
+                Espacios curriculares: <strong>{adeudadas.map((a) => `${a.nombre} (${a.anio}° año)`).join(', ')}</strong>. Tienes cuadernillos y modelos de examen asignados para rendir en el período de intensificación.
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function HomePage() {
               Mi Trayectoria Escolar
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Visualiza tu mapa histórico año por año (1° a 6°° año), notas finales y estado de avance bajo la nueva normativa.
+              Visualiza tu mapa histórico año por año (1° a 6° año), notas finales y estado de avance bajo la nueva normativa.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-blue-600">

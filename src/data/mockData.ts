@@ -10,8 +10,8 @@ import {
 export const MATERIALES_PRECARGADOS: MaterialEstudio[] = [
   {
     id: 'mat-mate-2',
-    titulo: 'Cuadernillo Oficial de Intensificación - Matemática 2°°° Año',
-    descripcion: 'Contiene los 4 núcleos prioritarios: Números Enteros y Racionales, Ecuaciones de 1° Grado, Proporcionalidad y Geometr?a (Teorema de Pit?goras). Incluye 35 ejercicios prácticos obligatorios para entregar.',
+    titulo: 'Cuadernillo Oficial de Intensificación - Matemática 2° Año',
+    descripcion: 'Contiene los 4 núcleos prioritarios: Números Enteros y Racionales, Ecuaciones de 1° Grado, Proporcionalidad y Geometría (Teorema de Pitágoras). Incluye 35 ejercicios prácticos obligatorios para entregar.',
     tipo: 'cuadernillo',
     tamano: '2.4 MB',
     fechaSubida: '15/09/2026',
@@ -34,7 +34,7 @@ export const MATERIALES_PRECARGADOS: MaterialEstudio[] = [
   },
   {
     id: 'mat-hist-3',
-    titulo: 'Guía de Fuentes y Análisis Cr?tico - Historia 3°°° Año',
+    titulo: 'Guía de Fuentes y Análisis Crítico - Historia 3° Año',
     descripcion: 'Trabajo práctico integrador sobre Conformación del Estado Nacional, Modelo Agroexportador y Movimientos Obreros. Requisito para la instancia de coloquio.',
     tipo: 'guia_actividades',
     tamano: '3.1 MB',
@@ -46,8 +46,8 @@ export const MATERIALES_PRECARGADOS: MaterialEstudio[] = [
   },
   {
     id: 'mat-norm-rec',
-    titulo: 'Pautas de Recursado y Articulaci?n de Materias Pendientes',
-    descripcion: 'Documento normativo institucional: C?mo funciona el cursado en contraturno, cupos máximos de materias adeudadas simultáneas y cronograma de comisiones evaluadoras.',
+    titulo: 'Pautas de Recursado y Articulación de Materias Pendientes',
+    descripcion: 'Documento normativo institucional: Cómo funciona el cursado en contraturno, cupos máximos de materias adeudadas simultáneas y cronograma de comisiones evaluadoras.',
     tipo: 'pautas_recursado',
     tamano: '1.2 MB',
     fechaSubida: '01/08/2026',
@@ -58,7 +58,7 @@ export const MATERIALES_PRECARGADOS: MaterialEstudio[] = [
   },
   {
     id: 'mat-fisqui-2',
-    titulo: 'Cuadernillo Teórico-Práctico - Físico-Química 2°°° Año',
+    titulo: 'Cuadernillo Teórico-Práctico - Físico-Química 2° Año',
     descripcion: 'Estados de la materia, sistemas materiales, tabla periódica y transformaciones químicas. Guía con actividades de laboratorio explicadas.',
     tipo: 'cuadernillo',
     tamano: '1.8 MB',
@@ -82,7 +82,7 @@ export const ESTUDIANTES_MOCK: Estudiante[] = [
     orientacion: 'Ciencias Sociales',
     legajo: 'LEG-2023-418',
     trayectoria: [
-      // 1 A?O - TODAS APROBADAS
+      // 1° AÑO - TODAS APROBADAS
       {
         id: 't-1-1',
         materiaId: 'm-mat-1',
@@ -154,7 +154,7 @@ export const ESTUDIANTES_MOCK: Estudiante[] = [
         materiales: []
       },
 
-      // 2 A?O - MATEM?TICA ADEUDADA
+      // 2° AÑO - MATEMÁTICA ADEUDADA
       {
         id: 't-2-1',
         materiaId: 'm-mat-2',
@@ -231,7 +231,7 @@ export const ESTUDIANTES_MOCK: Estudiante[] = [
         materiales: []
       },
 
-      // 3 A?O - HISTORIA ADEUDADA
+      // 3° AÑO - HISTORIA ADEUDADA
       {
         id: 't-3-1',
         materiaId: 'm-mat-3',
@@ -269,7 +269,7 @@ export const ESTUDIANTES_MOCK: Estudiante[] = [
         calificacionFinal: null,
         primerCuatrimestreRITE: 'TED',
         segundoCuatrimestreRITE: 'TEP',
-        intensificacionDiciembre: 'No se present? a la instancia oral',
+        intensificacionDiciembre: 'No se presentó a la instancia oral',
         intensificacionFebrero: 'Pendiente de acreditación',
         docenteAsignado: 'Prof. Diego Morales',
         docenteEmail: 'diego.morales@escuela.edu.ar',
@@ -293,7 +293,7 @@ export const ESTUDIANTES_MOCK: Estudiante[] = [
         materiales: []
       },
 
-      // 4 A?O - A?O ACTUAL (CURSANDO)
+      // 4° AÑO - AÑO ACTUAL (CURSANDO)
       {
         id: 't-4-1',
         materiaId: 'm-mat-4',
@@ -736,7 +736,7 @@ export const MENSAJES_INICIALES: Mensaje[] = [
     receptorRol: 'docente',
     materia: 'Historia (Adeudada de 3° año)',
     asunto: 'Material para el coloquio de Historia 3',
-    contenido: 'Profesor Morales, descargué la guía de fuentes de 3° año. ?El coloquio de diciembre incluye la unidad de la Generación del 80 o solo hasta la consolidaci?n del Estado Nacional?',
+    contenido: 'Profesor Morales, descargué la guía de fuentes de 3° año. ¿El coloquio de diciembre incluye la unidad de la Generación del 80 o solo hasta la consolidación del Estado Nacional?',
     fecha: '04/10/2026 11:20',
     leido: true,
     etiqueta: 'intensificacion',
