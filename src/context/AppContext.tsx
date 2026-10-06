@@ -213,49 +213,49 @@ export function AppProvider({ children }: { children: ReactNode }) {
     );
   };
 
-  // Funci?n para descargar un archivo real generado al vuelo
+  // Función para descargar un archivo real generado al vuelo
   const descargarMaterialArchivo = (material: MaterialEstudio) => {
     const contenido = `================================================================================
 INSTITUTO DE EDUCACI?N SECUNDARIA - PLATAFORMA EDUTRAYECTORIA
-R?gimen Acad?mico Marco - Per?odo de Intensificaci?n y Acreditaci?n
+Régimen Académico Marco - Período de Intensificación y Acreditación
 ================================================================================
 
 DOCUMENTO: ${material.titulo}
-MATERIA: ${material.materiaNombre} (${material.anio}? A?o)
+MATERIA: ${material.materiaNombre} (${material.anio}?°° Año)
 DOCENTE RESPONSABLE: ${material.docenteNombre}
-FECHA DE PUBLICACI?N: ${material.fechaSubida}
+FECHA DE PUBLICACIÓN: ${material.fechaSubida}
 TIPO: ${material.tipo.toUpperCase().replace('_', ' ')}
 
 --------------------------------------------------------------------------------
-DESCRIPCI?N Y OBJETIVOS PEDAG?GICOS:
+DESCRIPCIÓN Y OBJETIVOS PEDAGÓGICOS:
 --------------------------------------------------------------------------------
 ${material.descripcion}
 
 --------------------------------------------------------------------------------
-CRITERIOS DE VALORACI?N Y EVALUACI?N SEG?N NUEVA NORMATIVA:
+CRITERIOS DE VALORACIÓN Y EVALUACIÓN SEG?N NUEVA NORMATIVA:
 --------------------------------------------------------------------------------
-1. Valoraci?n integral de la trayectoria: Presentaci?n de actividades y defensa oral.
-2. La acreditaci?n requiere calificaci?n num?rica igual o superior a 7 (siete) puntos.
-3. Se contempla el acompa?amiento presencial en las horas fijadas de contraturno y tutor?a.
-4. En caso de no alcanzar los objetivos en este per?odo de intensificaci?n, el estudiante
-   continuar? en la siguiente instancia o acceder? al recursado espec?fico del espacio.
+1. Valoración integral de la trayectoria: Presentación de actividades y defensa oral.
+2. La acreditación requiere calificación numérica igual o superior a 7 (siete) puntos.
+3. Se contempla el acompañamiento presencial en las horas fijadas de contraturno y tutoría.
+4. En caso de no alcanzar los objetivos en este período de intensificación, el estudiante
+   continuará en la siguiente instancia o accederá al recursado específico del espacio.
 
 --------------------------------------------------------------------------------
 CONTENIDOS PRIORITARIOS A EVALUAR:
 --------------------------------------------------------------------------------
-- Unidad 1: Diagn?stico y conceptos estructurantes del ?rea.
-- Unidad 2: Desarrollo de capacidades cognitivas y resoluci?n de problem?ticas.
-- Unidad 3: Aplicaci?n pr?ctica y articulaci?n de saberes con el a?o correlativo.
+- Unidad 1: Diagnóstico y conceptos estructurantes del área.
+- Unidad 2: Desarrollo de capacidades cognitivas y resolución de problemáticas.
+- Unidad 3: Aplicación práctica y articulación de saberes con el año correlativo.
 
 --------------------------------------------------------------------------------
 PAUTAS FORMALES DE PRESENTACI?N:
 --------------------------------------------------------------------------------
-- Presentar en carpeta individual con car?tula oficial (Nombre, Apellido, DNI, Curso y A?o).
+- Presentar en carpeta individual con carátula oficial (Nombre, Apellido, DNI, Curso y°° Año).
 - Letra legible, prolijidad y constancia de desarrollo paso a paso en ejercicios.
-- Entregar en mano al docente evaluador el primer d?a fijado en el cronograma oficial.
+- Entregar en mano al docente evaluador el primer día fijado en el cronograma oficial.
 
 ================================================================================
-Generado autom?ticamente por EduTrayectoria - Sistema Oficial de Gesti?n Escolar.
+Generado automáticamente por EduTrayectoria - Sistema Oficial de Gestión Escolar.
 ================================================================================`;
 
     const blob = new Blob([contenido], { type: 'text/plain;charset=utf-8' });

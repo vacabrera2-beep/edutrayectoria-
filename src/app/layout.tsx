@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: 'EduTrayectoria | Plataforma Educativa - Nueva Normativa Secundaria',
-  description: 'Gesti?n de Trayectorias Escolares, Materias Adeudadas, Per?odos de Intensificaci?n, S?bana de Notas RITE y Comunicaci?n Docente-Alumno.',
+  description: 'Gestión de Trayectorias Escolares, Materias Adeudadas, Períodos de Intensificación, Sábana de Notas RITE y Comunicación Docente-Alumno.',
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
           </main>
           <footer className="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500">
             <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-              <p className="font-semibold text-slate-700">EduTrayectoria ? R?gimen Acad?mico Marco de Educaci?n Secundaria</p>
+              <p className="font-semibold text-slate-700">EduTrayectoria ? Régimen Académico Marco de Educación Secundaria</p>
               <p>Ciclo Lectivo 2026 ? Registro Institucional de Trayectorias Educativas (RITE)</p>
             </div>
           </footer>

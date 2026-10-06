@@ -37,15 +37,15 @@ export function exportarPlanillaNotasPDF(
   // Columnas para la tabla
   const head = [
     [
-      'N?',
+      'N°',
       'Estudiante',
       'DNI',
-      '1? Cuatr. (RITE)',
-      '2? Cuatr. (RITE)',
+      '1 Cuatr. (RITE)',
+      '2 Cuatr. (RITE)',
       'Intensif. Dic.',
       'Intensif. Feb.',
       'Nota Definitiva',
-      'Condici?n Final',
+      'Condición Final',
       'Observaciones'
     ]
   ];
@@ -104,7 +104,7 @@ export function exportarPlanillaNotasPDF(
   doc.setTextColor(80, 80, 80);
 
   doc.line(20, signatureY, 75, signatureY);
-  doc.text('Firma y Aclaraci?n Docente', 25, signatureY + 5);
+  doc.text('Firma y Aclaración Docente', 25, signatureY + 5);
 
   doc.line(115, signatureY, 170, signatureY);
   doc.text('Firma y Sello Preceptor/a', 120, signatureY + 5);
@@ -125,7 +125,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   // Encabezado
   doc.setFontSize(16);
   doc.setTextColor(30, 58, 138);
-  doc.text('DIRECCI?N GENERAL DE CULTURA Y EDUCACI?N', 105, 16, { align: 'center' });
+  doc.text('DIRECCIÓN GENERAL DE CULTURA Y EDUCACI?N', 105, 16, { align: 'center' });
 
   doc.setFontSize(12);
   doc.setTextColor(55, 65, 81);
@@ -133,7 +133,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
 
   doc.setFontSize(9);
   doc.setTextColor(100, 100, 100);
-  doc.text('R?gimen Acad?mico de la Educaci?n Secundaria - Ciclo Lectivo 2026', 105, 28, { align: 'center' });
+  doc.text('Régimen Académico de la Educación Secundaria - Ciclo Lectivo 2026', 105, 28, { align: 'center' });
 
   // Ficha del estudiante
   doc.setFillColor(243, 244, 246);
@@ -144,17 +144,17 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   doc.text(`Estudiante: ${estudiante.nombre}`, 18, 38);
   doc.text(`DNI: ${estudiante.dni}`, 120, 38);
   doc.text(`Curso: ${estudiante.cursoActual} (${estudiante.turno})`, 18, 45);
-  doc.text(`Orientaci?n: ${estudiante.orientacion}`, 85, 45);
+  doc.text(`Orientación: ${estudiante.orientacion}`, 85, 45);
   doc.text(`Legajo: ${estudiante.legajo}`, 150, 45);
 
   // Tabla con materias actuales y RITE
   const materiasActuales = estudiante.trayectoria.filter((t) => t.anio === estudiante.anioActual);
-  const head = [['Materia', '1? Cuatrimestre', '2? Cuatrimestre', 'Situaci?n Actual', 'Docente Asignado']];
+  const head = [['Materia', '1° Cuatrimestre', '2° Cuatrimestre', 'Situación Actual', 'Docente Asignado']];
   const body = materiasActuales.map((m) => [
     m.nombre,
     m.primerCuatrimestreRITE,
     m.segundoCuatrimestreRITE,
-    m.status === 'aprobada' ? 'Aprobada' : m.status === 'intensificacion' ? 'En Intensificaci?n' : 'Cursando',
+    m.status === 'aprobada' ? 'Aprobada' : m.status === 'intensificacion' ? 'En Intensificación' : 'Cursando',
     m.docenteAsignado
   ]);
 
@@ -182,7 +182,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
     }
   });
 
-  // Secci?n de Materias Pendientes / Adeudadas de a?os anteriores
+  // Sección de Materias Pendientes / Adeudadas de años anteriores
   const finalY = (doc as any).lastAutoTable?.finalY || 130;
   const materiasAdeudadas = estudiante.trayectoria.filter((t) => t.status === 'adeudada');
 
@@ -195,12 +195,12 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
     doc.setTextColor(22, 101, 52); // green-800
     doc.text('El estudiante no registra materias adeudadas de ciclos lectivos previos.', 14, finalY + 16);
   } else {
-    const headAdeudadas = [['Materia Pendiente', 'A?o Original', 'Docente Evaluador', 'Instancia de Acreditaci?n']];
+    const headAdeudadas = [['Materia Pendiente', 'Año Original', 'Docente Evaluador', 'Instancia de Acreditación']];
     const bodyAdeudadas = materiasAdeudadas.map((m) => [
       m.nombre,
-      `${m.anio}? A?o`,
+      `${m.anio}?°° Año`,
       m.docenteAsignado,
-      'Per?odo de Intensificaci?n Dic/Feb'
+      'Período de Intensificación Dic/Feb'
     ]);
 
     autoTable(doc, {
@@ -235,9 +235,9 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   doc.setFontSize(7.5);
   doc.setTextColor(120, 20, 20);
   doc.text('GLOSARIO Y MARCO NORMATIVO:', 18, finalY2 + 13);
-  doc.text('? TEA (Trayectoria Educativa Avanzada): Alcanz? los aprendizajes prioritarios previstos (Calificaci?n 7 a 10).', 18, finalY2 + 17);
-  doc.text('? TEP (Trayectoria Educativa en Proceso): Requiere afianzar contenidos en per?odo de intensificaci?n.', 18, finalY2 + 21);
-  doc.text('? TED (Trayectoria Educativa Discontinua): Escasa vinculaci?n. Requiere intensificaci?n prioritaria presencial.', 18, finalY2 + 25);
+  doc.text('? TEA (Trayectoria Educativa Avanzada): Alcanz? los aprendizajes prioritarios previstos (Calificación 7 a 10).', 18, finalY2 + 17);
+  doc.text('? TEP (Trayectoria Educativa en Proceso): Requiere afianzar contenidos en período de intensificación.', 18, finalY2 + 21);
+  doc.text('? TED (Trayectoria Educativa Discontinua): Escasa vinculación. Requiere intensificación prioritaria presencial.', 18, finalY2 + 25);
 
   // Firmas
   const signY = finalY2 + 48;

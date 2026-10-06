@@ -241,7 +241,7 @@ export default function MensajesList() {
                         {msgActual.emisorNombre.charAt(0)}
                       </div>
                       <span className="text-xs font-bold text-slate-900">{msgActual.emisorNombre}</span>
-                      <span className="text-[10px] px-2 py-0.2 bg-blue-100 text-blue-700 rounded-full font-medium">Estudiante</span>
+                      <span className="text-[10px] px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full font-medium">Estudiante</span>
                     </div>
                     <span className="text-[11px] text-slate-400 font-mono">{msgActual.fecha}</span>
                   </div>
@@ -268,7 +268,7 @@ export default function MensajesList() {
                           {r.emisor.charAt(0)}
                         </div>
                         <span className="text-xs font-bold text-slate-900">{r.emisor}</span>
-                        <span className={`text-[10px] px-2 py-0.2 rounded-full font-medium ${
+                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${
                           r.rol === 'docente' ? 'bg-emerald-100 text-emerald-800' : 'bg-blue-100 text-blue-800'
                         }`}>
                           {r.rol === 'docente' ? 'Docente a Cargo' : 'Respuesta'}
@@ -316,7 +316,7 @@ export default function MensajesList() {
 
       {/* Modal: Nueva Consulta al Profesor */}
       {modalNuevo && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
             <h3 className="text-lg font-bold text-slate-900 mb-1">
               Enviar Consulta al Profesor
@@ -349,7 +349,7 @@ export default function MensajesList() {
                         : 'border-slate-200 text-slate-600'
                     }`}
                   >
-                    Cursada Regular del Año
+                    Cursada Regular del°° Año
                   </button>
                 </div>
               </div>

@@ -60,7 +60,7 @@ export default function PlanillaNotasTable() {
               Planilla de Calificaciones por Curso
             </h1>
             <p className="text-xs text-slate-500">
-              Espacio: <strong className="text-slate-800">{materiaSeleccionada}</strong> • División: <strong className="text-slate-800">{cursoSeleccionado}</strong> • Docente: <strong className="text-slate-800">{docenteNombre}</strong>
+              Espacio: <strong className="text-slate-800">{materiaSeleccionada}</strong> | División: <strong className="text-slate-800">{cursoSeleccionado}</strong> | Docente: <strong className="text-slate-800">{docenteNombre}</strong>
             </p>
           </div>
 

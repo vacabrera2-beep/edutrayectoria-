@@ -29,17 +29,17 @@ export default function IntensificacionPage() {
           <div>
             <div className="flex items-center gap-2">
               <span className="px-2.5 py-0.5 text-xs font-bold bg-amber-100 text-amber-800 rounded-md">
-                Cronograma Oficial de Acreditaci?n
+                Cronograma Oficial de Acreditación
               </span>
               <span className="text-xs text-slate-500 font-medium">
-                R?gimen Acad?mico Marco
+                Régimen Académico Marco
               </span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mt-2">
-              Per?odos de Intensificaci?n & Normativa de Recursado
+              Períodos de Intensificación & Normativa de Recursado
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 max-w-2xl mt-1 leading-relaxed">
-              Consulta las fechas oficiales de comisiones evaluadoras, per?odos presenciales de acompa?amiento y los criterios pedag?gicos para la acreditaci?n o recursado de materias.
+              Consulta las fechas oficiales de comisiones evaluadoras, períodos presenciales de acompañamiento y los criterios pedagógicos para la acreditación o recursado de materias.
             </p>
           </div>
 
@@ -52,34 +52,34 @@ export default function IntensificacionPage() {
           </button>
         </div>
 
-        {/* Explicaci?n did?ctica: ?C?mo funciona el recursado con la nueva normativa? */}
+        {/* Explicación didáctica: ¿Cómo funciona el recursado con la nueva normativa? */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
           <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200 text-xs text-blue-950 space-y-2">
             <h3 className="font-bold flex items-center gap-1.5 text-blue-900 text-sm">
               <ShieldCheck className="w-4 h-4 text-blue-600" />
-              ?Qu? es el Per?odo de Intensificaci?n?
+              ¿Qué es el Período de Intensificación?
             </h3>
             <p className="leading-relaxed">
-              Es un per?odo espec?fico de <strong>ense?anza y evaluaci?n focalizada</strong>. Los alumnos asisten con sus cuadernillos completos y trabajan con el docente de la comisi?n en los n?cleos de aprendizaje prioritarios que no fueron alcanzados durante el ciclo lectivo. La nota m?nima de acreditaci?n es <strong>7 (siete)</strong>.
+              Es un período específico de <strong>enseñanza y evaluación focalizada</strong>. Los alumnos asisten con sus cuadernillos completos y trabajan con el docente de la comisión en los núcleos de aprendizaje prioritarios que no fueron alcanzados durante el ciclo lectivo. La nota mínima de acreditación es <strong>7 (siete)</strong>.
             </p>
           </div>
 
           <div className="p-4 rounded-xl bg-purple-50/70 border border-purple-200 text-xs text-purple-950 space-y-2">
             <h3 className="font-bold flex items-center gap-1.5 text-purple-900 text-sm">
               <AlertTriangle className="w-4 h-4 text-purple-600" />
-              ?Cu?ndo se debe "Recursar una Materia"?
+              ¿Cuándo se debe "Recursar una Materia"?
             </h3>
             <p className="leading-relaxed">
-              Bajo la nueva normativa, <strong>el estudiante no repite el a?o en bloque</strong>. Si luego de agotar las instancias de intensificaci?n de Diciembre y Febrero el estudiante a?n adeuda la materia, se habilita el <strong>recursado espec?fico</strong> de ese espacio curricular a contraturno o articulado, permiti?ndole continuar cursando las materias del a?o siguiente.
+              Bajo la nueva normativa, <strong>el estudiante no repite el año en bloque</strong>. Si luego de agotar las instancias de intensificación de Diciembre y Febrero el estudiante aún adeuda la materia, se habilita el <strong>recursado específico</strong> de ese espacio curricular a contraturno o articulado, permitiéndole continuar cursando las materias del año siguiente.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Lista de Per?odos de Intensificaci?n Oficiales */}
+      {/* Lista de Períodos de Intensificación Oficiales */}
       <div className="space-y-4">
         <h2 className="text-xl font-black text-slate-900">
-          Cronograma de Instancias de Intensificaci?n
+          Cronograma de Instancias de Intensificación
         </h2>
 
         {periodos.map((per) => (
@@ -107,7 +107,7 @@ export default function IntensificacionPage() {
                     <span className="font-extrabold text-sm text-slate-900">{per.titulo}</span>
                     {per.activo && (
                       <span className="px-2 py-0.5 text-[10px] font-extrabold bg-emerald-100 text-emerald-800 rounded-full">
-                        En Curso / Pr?ximo
+                        En Curso / Próximo
                       </span>
                     )}
                   </div>
@@ -124,7 +124,7 @@ export default function IntensificacionPage() {
               {per.descripcion}
             </p>
 
-            {/* Requisitos de Acreditaci?n */}
+            {/* Requisitos de Acreditación */}
             <div className="mt-4 pt-4 border-t border-slate-100">
               <span className="text-xs font-bold text-slate-700 uppercase tracking-wider block mb-2">
                 Requisitos Obligatorios para la Instancia:

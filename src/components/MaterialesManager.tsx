@@ -153,7 +153,7 @@ export default function MaterialesManager() {
 
               <div className="flex items-center gap-2 mt-1 mb-2">
                 <span className="text-xs font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded">
-                  {mat.materiaNombre} ({mat.anio}° Año)
+                  {mat.materiaNombre} ({mat.anio}°°° Año)
                 </span>
               </div>
 
@@ -194,7 +194,7 @@ export default function MaterialesManager() {
 
       {/* Modal para subir nuevo material (Docente/Directivo) */}
       {modalNuevo && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-xs">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
             <h3 className="text-lg font-bold text-slate-900 mb-1">
               Publicar Material Pedagógico
@@ -235,7 +235,7 @@ export default function MaterialesManager() {
                     className="w-full px-3 py-2 text-xs border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                   >
                     {[1, 2, 3, 4, 5, 6].map((a) => (
-                      <option key={a} value={a}>{a}° Año</option>
+                      <option key={a} value={a}>{a}°° Año</option>
                     ))}
                   </select>
                 </div>

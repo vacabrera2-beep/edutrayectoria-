@@ -32,26 +32,26 @@ export default function HomePage() {
       {/* Banner Explicativo de la Nueva Normativa */}
       <BannerNormativa />
 
-      {/* Saludo y Estado Principal seg?n Rol */}
+      {/* Saludo y Estado Principal según Rol */}
       <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Panel Oficial ? Rol Activo: {role.toUpperCase()}</span>
+            <span>Panel Oficial | Rol Activo: {role.toUpperCase()}</span>
           </div>
           <h1 className="text-3xl font-black text-slate-900 tracking-tight">
             {role === 'estudiante'
-              ? `?Hola, ${estudianteActivo.nombre.split(' ')[0]}!`
+              ? `¡Hola, ${estudianteActivo.nombre.split(' ')[0]}!`
               : role === 'docente'
               ? 'Bienvenida, Prof. Valeria Castro'
-              : 'Bienvenida, Direcci?n / Secretar?a'}
+              : 'Bienvenida, Dirección / Secretaría'}
           </h1>
           <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
             {role === 'estudiante'
-              ? `Est?s cursando ${estudianteActivo.cursoActual} (${estudianteActivo.orientacion}). Recuerda revisar tus materias adeudadas y descargar los materiales de intensificaci?n.`
+              ? `Estás cursando ${estudianteActivo.cursoActual} (${estudianteActivo.orientacion}). Recuerda revisar tus materias adeudadas y descargar los materiales de intensificación.`
               : role === 'docente'
-              ? 'Gestiona la carga de notas RITE (TEA, TEP, TED), descarga la s?bana oficial en PDF/Excel y atiende las consultas de alumnos en intensificaci?n.'
-              : 'Supervisa las trayectorias de toda la instituci?n, organiza el plantel docente y coordina las comisiones de intensificaci?n.'}
+              ? 'Gestiona la carga de notas RITE (TEA, TEP, TED), descarga la sábana oficial en PDF/Excel y atiende las consultas de alumnos en intensificación.'
+              : 'Supervisa las trayectorias de toda la institución, organiza el plantel docente y coordina las comisiones de intensificación.'}
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function HomePage() {
             className="flex items-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-xs shadow-md shadow-blue-500/20 transition-all hover:scale-[1.02] cursor-pointer whitespace-nowrap"
           >
             <Download className="w-4 h-4" />
-            <span>Descargar mi Bolet?n R.I.T.E.</span>
+            <span>Descargar mi Boletín R.I.T.E.</span>
           </button>
         )}
       </div>
@@ -78,10 +78,10 @@ export default function HomePage() {
                 Aviso Importante de Trayectoria Escolar
               </span>
               <h2 className="text-xl font-black text-white mt-0.5">
-                Tienes {adeudadas.length} materia(s) adeudada(s) de a?os anteriores
+                Tienes {adeudadas.length} materia(s) adeudada(s) de años anteriores
               </h2>
               <p className="text-xs text-rose-100 mt-1 max-w-xl">
-                Espacios curriculares: <strong>{adeudadas.map((a) => `${a.nombre} (${a.anio}? a?o)`).join(', ')}</strong>. Tienes cuadernillos y modelos de examen asignados para rendir en el per?odo de intensificaci?n.
+                Espacios curriculares: <strong>{adeudadas.map((a) => `${a.nombre} (${a.anio}? año)`).join(', ')}</strong>. Tienes cuadernillos y modelos de examen asignados para rendir en el período de intensificación.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Grid de Accesos R?pidos y M?dulos */}
+      {/* Grid de Accesos Rápidos y Módulos */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Card 1: Trayectoria Escolar */}
         <Link
@@ -111,7 +111,7 @@ export default function HomePage() {
               Mi Trayectoria Escolar
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Visualiza tu mapa hist?rico a?o por a?o (1? a 6? a?o), notas finales y estado de avance bajo la nueva normativa.
+              Visualiza tu mapa histórico año por año (1° a 6°° año), notas finales y estado de avance bajo la nueva normativa.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-blue-600">
@@ -133,11 +133,11 @@ export default function HomePage() {
               Materias Adeudadas & Materiales
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Descarga directa de cuadernillos oficiales, gu?as de intensificaci?n y modelos de examen para preparar las mesas evaluadoras.
+              Descarga directa de cuadernillos oficiales, guías de intensificación y modelos de examen para preparar las mesas evaluadoras.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-red-600">
-            <span>Descargar Gu?as</span>
+            <span>Descargar Guías</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>
         </Link>
@@ -155,11 +155,11 @@ export default function HomePage() {
               Planilla de Calificaciones por Curso
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              S?bana oficial de notas RITE con descarga en formato PDF y exportaci?n en Excel (CSV) para preceptores y docentes.
+              Sábana oficial de notas RITE con descarga en formato PDF y exportación en Excel (CSV) para preceptores y docentes.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-emerald-600">
-            <span>Ver S?bana de Notas</span>
+            <span>Ver Sábana de Notas</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>
         </Link>
@@ -177,7 +177,7 @@ export default function HomePage() {
               Plantel Docente y Asignaciones
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Directorio de profesores, designaci?n de comisiones evaluadoras para intensificaci?n y horarios de consulta en contraturno.
+              Directorio de profesores, designación de comisiones evaluadoras para intensificación y horarios de consulta en contraturno.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-purple-600">
@@ -186,7 +186,7 @@ export default function HomePage() {
           </div>
         </Link>
 
-        {/* Card 5: Per?odos de Intensificaci?n y Recursado */}
+        {/* Card 5: Períodos de Intensificación y Recursado */}
         <Link
           href="/intensificacion"
           className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-amber-400 transition-all group flex flex-col justify-between"
@@ -196,10 +196,10 @@ export default function HomePage() {
               <Calendar className="w-6 h-6" />
             </div>
             <h3 className="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">
-              Fechas de Inter?s & Recursado
+              Fechas de Interés & Recursado
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Cronograma oficial de intensificaci?n de Diciembre y Febrero, requisitos de acreditaci?n y pautas de recursado.
+              Cronograma oficial de intensificación de Diciembre y Febrero, requisitos de acreditación y pautas de recursado.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-amber-600">
@@ -218,20 +218,20 @@ export default function HomePage() {
               <MessageSquare className="w-6 h-6" />
             </div>
             <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
-              Comunicaci?n con el Profesor
+              Comunicación con el Profesor
             </h3>
             <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-              Canal directo para consultar dudas sobre la materia, coordinar tutor?as y recibir devoluciones pedag?gicas.
+              Canal directo para consultar dudas sobre la materia, coordinar tutorías y recibir devoluciones pedagógicas.
             </p>
           </div>
           <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-blue-600">
-            <span>Abrir Mensajer?a</span>
+            <span>Abrir Mensajería</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </div>
         </Link>
       </div>
 
-      {/* Banner de Pr?xima Instancia de Evaluaci?n Oficial */}
+      {/* Banner de Próxima Instancia de Evaluación Oficial */}
       {proximoPeriodo && (
         <div className="bg-slate-900 text-white rounded-2xl p-6 shadow-xl border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div className="flex items-center gap-4">
@@ -240,11 +240,11 @@ export default function HomePage() {
             </div>
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-blue-400">
-                Pr?xima Instancia Institucional
+                Próxima Instancia Institucional
               </span>
               <h3 className="text-lg font-black text-white">{proximoPeriodo.titulo}</h3>
               <p className="text-xs text-slate-400 mt-0.5">
-                Per?odo: <strong className="text-white">{proximoPeriodo.periodo}</strong> ? {proximoPeriodo.destinatarios}
+                Período: <strong className="text-white">{proximoPeriodo.periodo}</strong> | {proximoPeriodo.destinatarios}
               </p>
             </div>
           </div>
@@ -253,7 +253,7 @@ export default function HomePage() {
             href="/intensificacion"
             className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs rounded-xl shadow transition-colors whitespace-nowrap"
           >
-            Ver Requisitos de Acreditaci?n
+            Ver Requisitos de Acreditación
           </Link>
         </div>
       )}

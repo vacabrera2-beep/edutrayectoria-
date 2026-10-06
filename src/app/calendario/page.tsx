@@ -9,23 +9,23 @@ export default function CalendarioPage() {
   const { periodos } = useApp();
 
   const hitos = [
-    { fecha: 'Marzo 2026', titulo: 'Inicio del Ciclo Lectivo', desc: 'Comienzo de clases regulares 1? a 6? a?o.' },
-    { fecha: 'Julio 2026', titulo: 'Cierre del 1? Informe RITE', desc: 'Primera valoraci?n pedag?gica cuatrimestral (TEA, TEP, TED).' },
-    { fecha: 'Septiembre - Noviembre 2026', titulo: 'Acompa?amiento en Contraturno', desc: 'Talleres semanales para estudiantes con materias pendientes.' },
-    { fecha: 'Noviembre 2026', titulo: 'Cierre del 2? Informe RITE', desc: 'Definici?n de aprobaci?n directa o derivaci?n a intensificaci?n.' },
-    { fecha: '09 al 22 de Diciembre 2026', titulo: 'Per?odo de Intensificaci?n Diciembre', desc: '1? instancia presencial obligatoria para TEP/TED y deudas de a?os anteriores.' },
-    { fecha: '15 al 27 de Febrero 2027', titulo: 'Per?odo de Intensificaci?n Febrero', desc: '2? instancia presencial previa al nuevo ciclo lectivo.' },
-    { fecha: 'Marzo 2027', titulo: 'Definici?n de Recursado Espec?fico', desc: 'Inscripci?n a contraturno para materias no acreditadas tras febrero.' },
+    { fecha: 'Marzo 2026', titulo: 'Inicio del Ciclo Lectivo', desc: 'Comienzo de clases regulares 1° a 6°° año.' },
+    { fecha: 'Julio 2026', titulo: 'Cierre del 1° Informe RITE', desc: 'Primera valoración pedagógica cuatrimestral (TEA, TEP, TED).' },
+    { fecha: 'Septiembre - Noviembre 2026', titulo: 'Acompañamiento en Contraturno', desc: 'Talleres semanales para estudiantes con materias pendientes.' },
+    { fecha: 'Noviembre 2026', titulo: 'Cierre del 2° Informe RITE', desc: 'Definición de aprobación directa o derivación a intensificación.' },
+    { fecha: '09 al 22 de Diciembre 2026', titulo: 'Período de Intensificación Diciembre', desc: '1 instancia presencial obligatoria para TEP/TED y deudas de años anteriores.' },
+    { fecha: '15 al 27 de Febrero 2027', titulo: 'Período de Intensificación Febrero', desc: '2 instancia presencial previa al nuevo ciclo lectivo.' },
+    { fecha: 'Marzo 2027', titulo: 'Definición de Recursado Espec?fico', desc: 'Inscripción a contraturno para materias no acreditadas tras febrero.' },
   ];
 
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
         <h1 className="text-2xl font-black text-slate-900">
-          Calendario Acad?mico Institucional 2026 / 2027
+          Calendario Académico Institucional 2026 / 2027
         </h1>
         <p className="text-xs text-slate-500 mt-1">
-          L?nea de tiempo oficial con las fechas clave de valoraci?n pedag?gica, per?odos de intensificaci?n y recursado.
+          Línea de tiempo oficial con las fechas clave de valoración pedagógica, períodos de intensificación y recursado.
         </p>
       </div>
 

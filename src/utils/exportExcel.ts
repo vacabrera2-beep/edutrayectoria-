@@ -40,7 +40,7 @@ export function exportarPlanillaNotasExcel(
 
   const csvContent = [headers.join(','), ...rows.map((r) => r.join(','))].join('\r\n');
 
-  // UTF-8 BOM para que Excel en espa?ol abra con tildes y caracteres correctos
+  // UTF-8 BOM para que Excel en español abra con tildes y caracteres correctos
   const blob = new Blob(['\uFEFF' + csvContent], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');

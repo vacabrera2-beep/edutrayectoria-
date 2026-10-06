@@ -28,7 +28,7 @@ export default function MateriasAdeudadasCard() {
         </div>
         <h3 className="text-lg font-bold text-emerald-900">?Trayectoria Limpia! No tienes materias adeudadas</h3>
         <p className="text-xs text-emerald-700 max-w-md mx-auto mt-1">
-          Has acreditado con ?xito todos los espacios curriculares de tus a?os anteriores. Contin?a enfoc?ndote en las materias de tu curso actual.
+          Has acreditado con éxito todos los espacios curriculares de tus años anteriores. Continúa enfocándote en las materias de tu curso actual.
         </p>
       </div>
     );
@@ -45,13 +45,13 @@ export default function MateriasAdeudadasCard() {
             </div>
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-rose-200">
-                Atenci?n - Nueva Normativa Secundaria
+                Atención - Nueva Normativa Secundaria
               </span>
               <h2 className="text-xl font-black text-white">
-                Tienes {adeudadas.length} materias pendientes de acreditaci?n de a?os anteriores
+                Tienes {adeudadas.length} materias pendientes de acreditación de años anteriores
               </h2>
               <p className="text-xs text-rose-100 mt-1 max-w-2xl leading-relaxed">
-                Bajo el R?gimen Acad?mico actual, no repites el a?o, pero debes <strong>intensificar y rendir</strong> estos espacios curriculares en los per?odos oficiales fijados (Diciembre y Febrero) para evitar el recursado obligatorio.
+                Bajo el Régimen Académico actual, no repites el año, pero debes <strong>intensificar y rendir</strong> estos espacios curriculares en los períodos oficiales fijados (Diciembre y Febrero) para evitar el recursado obligatorio.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function MateriasAdeudadasCard() {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-red-100 text-red-800 uppercase tracking-wider">
-                    Adeudada de {materia.anio}? A?o
+                    Adeudada de {materia.anio}?°° Año
                   </span>
                   <span className="text-xs text-slate-500">
                     Ciclo Lectivo Original: {2026 - (estudianteActivo.anioActual - materia.anio)}
@@ -99,10 +99,10 @@ export default function MateriasAdeudadasCard() {
               </div>
             </div>
 
-            {/* Informaci?n del Docente Asignado y Horario */}
+            {/* Información del Docente Asignado y Horario */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
               <div>
-                <span className="text-slate-500 font-semibold block mb-0.5">Docente Evaluador / Intensificaci?n:</span>
+                <span className="text-slate-500 font-semibold block mb-0.5">Docente Evaluador / Intensificación:</span>
                 <p className="font-bold text-slate-900 flex items-center gap-1.5">
                   <User className="w-4 h-4 text-blue-600" />
                   {materia.docenteAsignado}
@@ -111,19 +111,19 @@ export default function MateriasAdeudadasCard() {
               </div>
 
               <div>
-                <span className="text-slate-500 font-semibold block mb-0.5">Horario de Consulta y Tutor?a:</span>
+                <span className="text-slate-500 font-semibold block mb-0.5">Horario de Consulta y Tutoría:</span>
                 <p className="font-bold text-slate-900 flex items-center gap-1.5">
                   <Clock className="w-4 h-4 text-amber-600" />
                   {materia.docenteHorarioConsulta}
                 </p>
-                <p className="text-[11px] text-slate-500">Instancia presencial de acompa?amiento</p>
+                <p className="text-[11px] text-slate-500">Instancia presencial de acompañamiento</p>
               </div>
 
               <div>
-                <span className="text-slate-500 font-semibold block mb-0.5">Pr?xima Instancia de Evaluaci?n:</span>
+                <span className="text-slate-500 font-semibold block mb-0.5">Próxima Instancia de Evaluación:</span>
                 <p className="font-bold text-red-700 flex items-center gap-1.5">
                   <Calendar className="w-4 h-4 text-red-600" />
-                  Per?odo Diciembre 2026 (09 al 22 de Dic)
+                  Período Diciembre 2026 (09 al 22 de Dic)
                 </p>
                 <p className="text-[11px] text-slate-500">Defensa oral y entrega de cuadernillo</p>
               </div>

@@ -35,13 +35,13 @@ export default function Navbar() {
     },
     { 
       href: '/materias-adeudadas', 
-      label: 'Materias Adeudadas & Gu?as', 
+      label: 'Materias Adeudadas & Guías', 
       icon: AlertCircle,
       highlight: true
     },
     { href: '/notas', label: 'Planilla de Calificaciones', icon: FileSpreadsheet },
     { href: '/docentes', label: 'Plantel Docente', icon: Users },
-    { href: '/intensificacion', label: 'Per?odos de Intensificaci?n', icon: Calendar },
+    { href: '/intensificacion', label: 'Períodos de Intensificación', icon: Calendar },
     { 
       href: '/mensajes', 
       label: 'Mensajes & Consultas', 
@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span className="font-medium text-slate-300">
-              Sistema Institucional de Trayectorias y Acreditaci?n (Nueva Normativa Secundaria)
+              Sistema Institucional de Trayectorias y Acreditación (Nueva Normativa Secundaria)
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
             <span className="hidden md:inline text-slate-400">Ciclo Lectivo 2026</span>
@@ -100,7 +100,7 @@ export default function Navbar() {
                     : 'text-slate-300 hover:text-white hover:bg-slate-700'
                 }`}
               >
-                ??? Preceptor?a / Directivo
+                ??? Preceptoría / Directivo
               </button>
             </div>
           </div>
@@ -122,11 +122,11 @@ export default function Navbar() {
                   Nueva Normativa
                 </span>
               </div>
-              <p className="text-xs text-slate-500 -mt-0.5">R?gimen Acad?mico Secundario</p>
+              <p className="text-xs text-slate-500 -mt-0.5">Régimen Académico Secundario</p>
             </div>
           </Link>
 
-          {/* Men? de Navegaci?n Desktop */}
+          {/* Menú de Navegaci?n Desktop */}
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => {
               const Icon = link.icon;
@@ -145,7 +145,7 @@ export default function Navbar() {
                   <span>{link.label}</span>
                   {link.badge && (
                     <span
-                      className={`ml-1 px-1.5 py-0.2 text-[10px] font-bold text-white rounded-full ${link.badgeColor}`}
+                      className={`ml-1 px-1.5 py-0.5 text-[10px] font-bold text-white rounded-full ${link.badgeColor}`}
                     >
                       {link.badge}
                     </span>
@@ -163,14 +163,14 @@ export default function Navbar() {
                   ? estudianteActivo.nombre
                   : role === 'docente'
                   ? 'Prof. Valeria Castro'
-                  : 'Prof. Claudia M?ndez (Vicedirecci?n)'}
+                  : 'Prof. Claudia Méndez (Vicedirección)'}
               </p>
               <p className="text-[11px] text-slate-500">
                 {role === 'estudiante'
                   ? `${estudianteActivo.cursoActual} ? ${estudianteActivo.orientacion}`
                   : role === 'docente'
-                  ? 'Dpto. Matem?tica y Exactas'
-                  : 'Equipo de Conducci?n Escolar'}
+                  ? 'Dpto. Matemática y Exactas'
+                  : 'Equipo de Conducción Escolar'}
               </p>
             </div>
             <div className={`w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm text-white shadow-sm ${
@@ -181,7 +181,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Barra de Navegaci?n M?vil y Tablets */}
+        {/* Barra de Navegaci?n Móvil y Tablets */}
         <div className="flex lg:hidden overflow-x-auto py-2 border-t border-slate-100 gap-1.5 no-scrollbar">
           {navLinks.map((link) => {
             const Icon = link.icon;
@@ -199,7 +199,7 @@ export default function Navbar() {
                 <Icon className="w-3.5 h-3.5" />
                 <span>{link.label}</span>
                 {link.badge && (
-                  <span className="px-1.5 py-0.2 text-[9px] font-bold bg-red-500 text-white rounded-full">
+                  <span className="px-1.5 py-0.5 text-[9px] font-bold bg-red-500 text-white rounded-full">
                     {link.badge}
                   </span>
                 )}

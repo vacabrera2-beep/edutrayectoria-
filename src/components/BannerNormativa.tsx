@@ -17,10 +17,10 @@ export default function BannerNormativa() {
             </span>
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-blue-300">
-                Marco Pedag?gico Vigente
+                Marco Pedagógico Vigente
               </span>
               <h2 className="text-xl font-bold tracking-tight text-white">
-                Nueva Normativa: ?C?mo funciona el R?gimen Acad?mico?
+                Nueva Normativa: ¿Cómo funciona el Régimen Académico?
               </h2>
             </div>
           </div>
@@ -38,14 +38,14 @@ export default function BannerNormativa() {
           <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-1.5 text-emerald-400 font-semibold text-xs">
               <CheckCircle2 className="w-4 h-4" />
-              <span>Acreditaci?n por Materia</span>
+              <span>Acreditación por Materia</span>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Ya <strong>no se repite el a?o completo</strong>. Si adeudas materias de a?os anteriores, avanzas de curso y las intensificas o recursas en contraturno.
+              Ya <strong>no se repite el año completo</strong>. Si adeudas materias de años anteriores, avanzas de curso y las intensificas o recursas en contraturno.
             </p>
           </div>
 
-          {/* Card 2: Valoraci?n RITE */}
+          {/* Card 2: Valoración RITE */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-1.5 text-blue-300 font-semibold text-xs">
               <Info className="w-4 h-4" />
@@ -56,25 +56,25 @@ export default function BannerNormativa() {
             </p>
           </div>
 
-          {/* Card 3: Instancias de Intensificaci?n */}
+          {/* Card 3: Instancias de Intensificación */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-1.5 text-amber-400 font-semibold text-xs">
               <AlertTriangle className="w-4 h-4" />
-              <span>Per?odos de Intensificaci?n</span>
+              <span>Períodos de Intensificación</span>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed">
               Instancias especiales en <strong>Diciembre</strong> y <strong>Febrero/Marzo</strong> para rendir materias con cuadernillos y defensas orales ante el docente.
             </p>
           </div>
 
-          {/* Card 4: Recursado espec?fico */}
+          {/* Card 4: Recursado específico */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
             <div className="flex items-center gap-2 mb-1.5 text-purple-300 font-semibold text-xs">
               <Info className="w-4 h-4" />
               <span>Criterios de Recursado</span>
             </div>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Si tras los per?odos de intensificaci?n la materia no se aprueba, se recursa en contraturno o articulaci?n sin perder las dem?s materias aprobadas.
+              Si tras los períodos de intensificación la materia no se aprueba, se recursa en contraturno o articulación sin perder las demás materias aprobadas.
             </p>
           </div>
         </div>
