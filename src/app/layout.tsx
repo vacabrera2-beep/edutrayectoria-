@@ -27,7 +27,7 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
               <div>
                 <p className="font-bold text-slate-800">
-                  Escuela de Educación Secundaria (E.E.S.) Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+                  Escuela de Educación Secundaria (E.E.S.) Nº  &ldquo;
                 </p>
                 <p className="text-slate-500 text-[11px] mt-0.5">
                   Ciclo Lectivo 2026 • Registro Institucional de Trayectorias Educativas (R.I.T.E.)
