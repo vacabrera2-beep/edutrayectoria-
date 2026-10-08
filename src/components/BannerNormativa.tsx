@@ -17,7 +17,7 @@ export default function BannerNormativa() {
             </span>
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-blue-300">
-                E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo; • Marco Pedagógico Vigente
+                E.E.S. Nº ; • Marco Pedagógico Vigente
               </span>
               <h2 className="text-xl font-bold tracking-tight text-white">
                 Nueva Normativa: ¿Cómo funciona el Régimen Académico?
