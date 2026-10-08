@@ -4,8 +4,8 @@ import { AppProvider } from '@/context/AppContext';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'E.E.S. Nº 16 "Fortaleza de los Kilmes" | EduTrayectoria',
-  description: 'Sistema Institucional de Trayectorias Escolares y Régimen Académico - Escuela de Educación Secundaria Nº 16 "Fortaleza de los Kilmes".',
+  title: 'E.E.S. Nº " | EduTrayectoria',
+  description: 'Sistema Institucional de Trayectorias Escolares y Régimen Académico - Escuela de Educación Secundaria Nº ".',
   authors: [{ name: 'Vanina Cabrera' }],
   creator: 'Vanina Cabrera',
 };
