@@ -17,7 +17,7 @@ export function exportarPlanillaNotasPDF(
   // Encabezado institucional
   doc.setFontSize(15);
   doc.setTextColor(30, 58, 138); // blue-900
-  doc.text('E.E.S. Nº 16 "FORTALEZA DE LOS KILMES" - PROVINCIA DE BUENOS AIRES', 14, 15);
+  doc.text('ESCUELA SECUNDARIA N° - PROVINCIA DE BUENOS AIRES', 14, 15);
 
   doc.setFontSize(10);
   doc.setTextColor(50, 50, 50);
@@ -125,7 +125,7 @@ export function exportarBoletinEstudiantePDF(estudiante: Estudiante) {
   // Encabezado
   doc.setFontSize(15);
   doc.setTextColor(30, 58, 138);
-  doc.text('E.E.S. Nº 16 "FORTALEZA DE LOS KILMES"', 105, 14, { align: 'center' });
+  doc.text('ESCUELA SECUNDARIA N°', 105, 14, { align: 'center' });
 
   doc.setFontSize(10);
   doc.setTextColor(55, 65, 81);

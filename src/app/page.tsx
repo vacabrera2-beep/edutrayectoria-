@@ -37,7 +37,7 @@ export default function HomePage() {
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>E.E.S. Nº ; | Rol: {role.toUpperCase()}</span>
+            <span>Escuela Secundaria N° | Rol: {role.toUpperCase()}</span>
           </div>
           <h1 className="text-3xl font-black text-slate-900 tracking-tight">
             {role === 'estudiante'

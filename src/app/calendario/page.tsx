@@ -22,7 +22,7 @@ export default function CalendarioPage() {
     <div className="space-y-6">
       <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
         <div className="text-xs font-bold text-blue-700 uppercase tracking-wider mb-1">
-          E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+          Escuela Secundaria N°
         </div>
         <h1 className="text-2xl font-black text-slate-900">
           Calendario Académico Institucional 2026 / 2027

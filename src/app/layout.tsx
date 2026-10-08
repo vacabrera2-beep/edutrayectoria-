@@ -4,8 +4,8 @@ import { AppProvider } from '@/context/AppContext';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: 'E.E.S. Nº " | EduTrayectoria',
-  description: 'Sistema Institucional de Trayectorias Escolares y Régimen Académico - Escuela de Educación Secundaria Nº ".',
+  title: 'Escuela Secundaria N° | EduTrayectoria',
+  description: 'Sistema Institucional de Trayectorias Escolares y Régimen Académico - Escuela Secundaria N°.',
   authors: [{ name: 'Vanina Cabrera' }],
   creator: 'Vanina Cabrera',
 };
@@ -27,7 +27,7 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
               <div>
                 <p className="font-bold text-slate-800">
-                  Escuela de Educación Secundaria (E.E.S.) Nº  &ldquo;
+                  Escuela Secundaria N°
                 </p>
                 <p className="text-slate-500 text-[11px] mt-0.5">
                   Ciclo Lectivo 2026 • Registro Institucional de Trayectorias Educativas (R.I.T.E.)

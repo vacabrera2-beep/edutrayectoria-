@@ -216,7 +216,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   // Función para descargar un archivo real generado al vuelo
   const descargarMaterialArchivo = (material: MaterialEstudio) => {
     const contenido = `================================================================================
-ESCUELA DE EDUCACIÓN SECUNDARIA (E.E.S.) Nº 16 "FORTALEZA DE LOS KILMES"
+ESCUELA SECUNDARIA N°
 Plataforma Institucional EduTrayectoria - Ciclo Lectivo 2026
 Régimen Académico Marco - Período de Intensificación y Acreditación
 ================================================================================
@@ -256,7 +256,7 @@ PAUTAS FORMALES DE PRESENTACIÓN:
 - Entregar en mano al docente evaluador el primer día fijado en el cronograma oficial.
 
 ================================================================================
-Generado oficialmente por E.E.S. Nº 16 "Fortaleza de los Kilmes" - EduTrayectoria
+Generado oficialmente por Escuela Secundaria N° - EduTrayectoria
 ================================================================================`;
 
     const blob = new Blob([contenido], { type: 'text/plain;charset=utf-8' });

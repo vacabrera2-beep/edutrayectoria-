@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <span className="font-bold text-white">
-              E.E.S. Nº 16 &ldquo;Fortaleza de los Kilmes&rdquo;
+              Escuela Secundaria N°
             </span>
             <span className="hidden md:inline text-slate-500">|</span>
             <span className="hidden md:inline text-slate-300">
@@ -122,11 +122,8 @@ export default function Navbar() {
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-black text-xl tracking-tight text-slate-900">EduTrayectoria</span>
-                <span className="px-1.5 py-0.5 text-[10px] font-bold bg-blue-100 text-blue-700 rounded uppercase tracking-wider">
-                  E.E.S. Nº 16
-                </span>
               </div>
-              <p className="text-xs font-medium text-slate-500 -mt-0.5">&ldquo;Fortaleza de los Kilmes&rdquo;</p>
+              <p className="text-xs font-medium text-slate-500 -mt-0.5">Escuela Secundaria N°</p>
             </div>
           </Link>
 
